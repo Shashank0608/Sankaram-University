@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  background-color: #fdd835;
+  padding: 21px 20px;
+  font-weight: 500;
+  color: #003f75;
+  font-size: 20px;
+}
+.navbar-custom {
+  background-color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar-nav .nav-link {
+  margin-right: 20px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #000;
+}
+.btn-register {
+  background-color: #fdd835;
+  font-weight: 500;
+  color: black;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: large;
+}
+.navbar-brand img {
+  height: 75px;
+}
+
+#top {
+  color: #003f75 !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #fdd835 !important;
+}
+
+/* page content */
+
+.contentTitle {
+  text-transform: uppercase;
+  color: #284fa7;
+  border-bottom: 1px dashed #284fa7;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.p1 {
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+/* End Page */
+
+#head {
+  color: #05164d;
+  font-size: x-large;
+  font-weight: 500;
+}
+
+#aboutus {
+  padding-top: 90px;
+}
+
+.logo-slider {
+  overflow: hidden;
+  position: relative;
+}
+
+.logo-slide-track {
+  display: flex;
+  width: calc(250px * 24); /* 24 = number of images */
+  animation: scroll 40s linear infinite;
+}
+
+.logo-slide-track img {
+  width: 200px;
+  height: auto;
+  margin: 0 20px;
+  object-fit: contain;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.benefitCard {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.benefitCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.benefitImg img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  object-fit: cover;
+}
+.aligned-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.aligned-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.tick-icon {
+  color: #003f75;
+  font-size: 24px;
+  margin-right: 10px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+.tick-text {
+  margin: 0;
+  text-align: justify;
+}
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.course-table th,
+.course-table td {
+  padding: 12px 16px;
+  vertical-align: top;
+
+}
+
+.course-table td:nth-child(2) {
+  white-space: nowrap;
+  text-align: left;
+  padding-left: 50px;
+}
